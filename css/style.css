@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#menu {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.bg {
+  background: linear-gradient(to right, #a517ba, #5f1782);
+  padding: 0 !important;
+}
+.logo img {
+  height: 60px;
+  padding-left: 20px;
+  animation-name: logomation;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.menu_ul li {
+  padding: 0 10px;
+}
+.menu_ul li a {
+  color: #ffffff !important;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.fa-bars {
+  color: #ffffff !important;
+  font-size: 30px !important;
+  outline: none;
+}
+.toggle {
+  outline: none !important;
+  border: none !important;
+}
+.menu_ul li a:hover {
+  color: #a517ba !important;
+  border-bottom: 1px solid #ffffff;
+}
+
+/* banner section  */
+#banner {
+  background: linear-gradient(to right, #a517ba, #5f1782);
+  color: #fff;
+  padding-top: 5%;
+}
+.promo_title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 100px;
+  text-transform: uppercase;
+}
+.promo_txt {
+  color: #000000;
+}
+.play-btn {
+  width: 45px;
+  margin: 20px;
+}
+.blogImg {
+  padding: 20px;
+  border-radius: 10px;
+}
+.bottom_img {
+  width: 100%;
+}
+
+/* services section  */
+#Service {
+  padding: 80px 0;
+}
+.title {
+  text-align: center;
+  font-weight: 600;
+  /* text-decoration: underline; */
+}
+.title:before {
+  content: " ";
+  background: #7b1798;
+  height: 5px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(63px);
+}
+.title::after {
+  content: " ";
+  background: #7b1798;
+  height: 10px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 40px;
+  transform: translateY(8px);
+}
+.services {
+  padding: 20px;
+}
+.services img {
+  width: 100%;
+  margin-top: 20px;
+}
+.services h4 {
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 5px;
+}
+.services p {
+  text-align: center;
+  color: #8b8a8a;
+}
+#Service .btn-primary {
+  box-shadow: none;
+  padding: 8 25px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(to right, #a517ba, #5f1782);
+}
+#Service .btn-primary:hover {
+  background: linear-gradient(to right, #5f1782, #a517ba);
+}
+/* About us Section  */
+#About {
+  width: 100%;
+  background: #f8f9fa;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.about_title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 8%;
+}
+.about_ul {
+  margin-left: 10px;
+}
+.about_ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.about_img img {
+  margin-top: 50px !important;
+}
+
+/* testimonial part  */
+#Testimonials {
+  margin: 100px 0;
+}
+.tesimonialstxt {
+  border-left: 4px solid #7b1798;
+}
+.tesimonialstxt img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.user-details {
+  margin: 5px;
+}
+.user_data {
+  display: inline-block;
+  font-size: 12px;
+}
+.user_data span {
+  color: #5c5c5c;
+  border-bottom: 1px solid #5f1782;
+}
+
+#social {
+  background: #f8f9fa;
+  padding: 100px 0;
+}
+.find_social {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.social_icon {
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+}
+.social_icon img {
+  width: 60px;
+  transition: 0.5s;
+}
+.social_icon a:hover img {
+  transform: translateY(-10px);
+}
+
+#Footer {
+  background: linear-gradient(to right, #a517ba, #5f1782);
+}
+.footer-img {
+  width: 100%;
+  /* background: linear-gradient(to right, #a517ba, #5f1782); */
+}
+.footer-box img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+/*======>>>>>>>>>>> Animation Site <<<<<<<<<<<<<<<<<<< */
+
+@keyframes logomation {
+  25% {
+    clip-path: circle(50% at -25% -25%);
+  }
+  50% {
+    border: 1px solid tomato;
+  }
+  75% {
+    clip-path: circle(45%);
+  }
+  100% {
+    clip-path: circle(25% at 25% 25%);
+  }
+}
+@media screen and (min-width: 600px) {
+  .menu_ul li a:hover {
+    border-bottom: none;
+    color: #000000 !important;
+  }
+}
